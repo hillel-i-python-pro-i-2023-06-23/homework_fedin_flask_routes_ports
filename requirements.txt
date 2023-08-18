@@ -1,0 +1,21 @@
+# For web.
+flask==2.3.2
+
+# For better querry handeling.
+webargs==8.3.0
+
+# For safety.
+markupsafe==2.1.3
+
+# [code_style]-[BEGIN]
+# Pre-commit hook.
+pre-commit==3.3.3
+# Upgrade syntax.
+pyupgrade==3.9.0
+# Formatter. Apply codestyle.
+black==23.7.0
+# Check codestyle.
+flake8==6.0.0
+# Removes unused imports and unused variables.
+autoflake==2.2.0
+# [code_style]-[END]

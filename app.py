@@ -17,6 +17,7 @@ def dynamic_route(username, number):
     return f'Hello {escape(username)}, your number is {number}.'
 
 
+# Get route with arguments as http://127.0.0.1:5000/greeting?name=Bob&age=2
 @app.route('/greeting')
 def query_route():
     name_param = request.args.get('name')
@@ -25,6 +26,7 @@ def query_route():
     return f'Hello {name_param}, your number is {age_param}.'
 
 
+# Get route with arguments as http://127.0.0.1:5000/webarg_greeting/45?name=Bob
 @app.route("/webarg_greeting/<int:age>")
 @use_args({"name": fields.Str()}, location="query")
 def user_detail(args, age):

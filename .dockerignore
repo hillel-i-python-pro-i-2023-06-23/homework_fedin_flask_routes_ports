@@ -2,6 +2,6 @@
 **
 
 # Exclude files/foldeers needed for docker
-!application
+#!application # :TODO: delete if is not used
 !app.py
 !requirements.txt

@@ -8,8 +8,4 @@ services:
       - '5000:5000' # Host - app
     command:
       - --host=0.0.0.0
-    volumes:
-      - ./source:/wd/source:rw
-      - ./logs:/wd/logs:rw
-      - ./output:/wd/output:rw
-      - ./db:/wd/db:rw
+

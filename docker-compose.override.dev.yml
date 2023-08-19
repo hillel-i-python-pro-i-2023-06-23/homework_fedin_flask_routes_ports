@@ -5,7 +5,9 @@ services:
   app:
     user: '1000'
     ports:
-      - '5000:5000' # Host - app
+      # Map port 48000/host to 45000/inside the container
+      - '48000:45000'
     command:
-      - --host=0.0.0.0
-
+      - --host=app
+      - --port=45000
+#      - --debug # Optional argument to set debug mode

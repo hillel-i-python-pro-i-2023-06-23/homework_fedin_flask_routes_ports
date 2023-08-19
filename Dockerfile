@@ -26,3 +26,6 @@ COPY --chown=${USER} ./application application
 USER ${USER}
 
 ENTRYPOINT ["flask", "run"]
+
+# Inform that app listens this port
+EXPOSE 45000

@@ -1,5 +1,6 @@
 version: '3.9'
 
+# Override docker-compose.yml
 
 services:
   app:
@@ -7,7 +8,7 @@ services:
     ports:
       # Map port 48000/host to 45000/inside the container
       - '48000:45000'
-    command:
+    command: # Set arguments for command in Dockerfile ENTRYPOINT
       - --host=app
       - --port=45000
 #      - --debug # Optional argument to set debug mode

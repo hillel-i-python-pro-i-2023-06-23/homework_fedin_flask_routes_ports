@@ -5,7 +5,7 @@
 
 ## 🏠 Homework 15
 
-Flask ports and routs.
+Flask ports and routes.
 
 
 
